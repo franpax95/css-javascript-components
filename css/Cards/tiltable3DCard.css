@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 35rem;
+    height: 20em;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+    background: linear-gradient(45deg, rgba(129, 37, 226, 1), rgba(174, 98, 255, 1));
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+
+    transform: perspective(1000px);
+    transform-style: preserve-3d;
+    transition: all 200ms ease;
+}
+
+.box h1 {
+    color: #fff;
+    font-size: 1.9rem;
+    font-weight: 600;
+    text-shadow: 0 0 22px rgba(0, 0, 0, 0.7);
+    transform: translateZ(50px);
+}
+
+.balls {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 2rem;
+}
+
+.balls span {
+    width: 0.5rem;
+    height: 0.5rem;
+    margin: 0 0.1rem;
+
+    display: inline-flex;
+
+    border-radius: 25px;
+    background: #ffffff;
+    box-shadow: 0 0 22px rgba(0, 0, 0, 0.7);
+
+    transform: translateZ(50px);
+}
+
+.cross {
+    position: absolute;
+    top: 0.8rem;
+    right: 1.8rem;
+
+    color: #fff;
+
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-shadow: 0 0 22px rgba(0, 0, 0, 0.7);
+
+    transform: translateZ(50px) rotate(45deg);
+}
