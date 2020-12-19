@@ -1,0 +1,77 @@
+body {
+    font-family: sans-serif;
+    margin: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.field-container {
+    height: 50px;
+    width: 320px;
+    padding-left: 12px;
+
+    position: relative;
+
+    border: 1px solid #bcbaba;
+    background-color: white;
+}
+
+.field-placeholder {
+    pointer-events: none;
+
+    position: absolute;
+    top: 50%;
+
+    color: #adadad;
+
+    font-size: 18px;
+
+    transform: translate(5px, -50%);
+    transition: all .14s ease-in-out;
+}
+
+input[type="text"].field-input {
+    box-sizing: border-box;
+
+    width: 100%;
+    margin-top: 20px;
+    padding: 5px;
+
+    display: block;
+    bottom: 0px;
+
+    border: none;
+    color: #000;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.07);
+    
+    font-size: 16px;
+}
+
+input[type="text"].field-input:focus {
+    outline: none;
+}
+
+input[type="text"].field-input::-moz-placeholder,
+input[type="text"].field-input::-ms-input-placeholder,
+input[type="text"].field-input::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input[type="text"].field-input.c-fix,
+input[type="text"].field-input:focus,
+input[type="text"].field-input:not(:placeholder-shown) {
+    border-color: transparent;
+}
+
+input[type="text"].field-input.c-dix ~ label,
+input[type="text"].field-input:focus ~ label,
+input[type="text"].field-input:not(:placeholder-shown) ~ label {
+    top: calc(30% - .5rem);
+    color: #646669;
+    font-size: 11px;
+    transform: translate(5px, 0%);
+}
+
