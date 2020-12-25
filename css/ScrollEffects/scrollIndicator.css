@@ -1,0 +1,35 @@
+#scrollIndicator {
+    height: 4px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: #333;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+section {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.home {
+    background-color: #da4747;
+}
+
+.about {
+    background-color: #db6400;
+}
+
+.services {
+    background-color: #61b15a;
+}
+
+.contact {
+    background-color: #ffa62b;
+}
