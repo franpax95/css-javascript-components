@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    user-select: none;
 
     font-family: 'Roboto', sans-serif;
 }
@@ -13,4 +12,31 @@ html,
 body {
     height: 100%;
     width: 100%;
+}
+
+body.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** for demo */
+.Buttons {
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fill, 300px);
+}
+
+.Buttons > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: dotted 1px black;
+}
+
+.Buttons > div:nth-child(odd) {
+    background-color: whitesmoke;
 }

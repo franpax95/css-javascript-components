@@ -1,66 +1,76 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    background: black;
-}
-.main{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-a{
+.LiquidButton1 {
     width: 150px;
     height: 50px;
+
+    position: relative;
+
     color: white;
+
     text-decoration: none;
     text-align: center;
-    position: relative;
 }
-a span{
+
+.LiquidButton1 span {
     line-height: 50px;
 }
-.liquid{
+
+.LiquidButton1 .liquid {
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: #4271ff;
+
     overflow: hidden;
+
+    background: #4271ff;
 }
-.liquid::before,.liquid::after{
+
+.LiquidButton1 .liquid::before,
+.LiquidButton1 .liquid::after {
     content: "";
-    position: absolute;
+
     width: 280px;
     height: 280px;
+
+    position: absolute;
+    
     border-radius: 50px;
+
     transition: all 0.8s;
 }
-.liquid::before{
+
+.LiquidButton1 .liquid::before {
     top: -275px;
     left: -50%;
+
     background: rgb(45, 45, 45);
+
     animation: anim 5s linear infinite;
 }
-.liquid::after{
+
+.LiquidButton1 .liquid::after {
     top: -270px;
     left: -50%;
+
     background: rgba(45, 45, 45, 0.666);
-    animation: anim 5s linear infinite;
+
+    animation: LiquidButton1Animation 5s linear infinite;
 }
-@keyframes anim{
-    0%{
+
+@keyframes LiquidButton1Animation{
+    0% {
         transform: rotate(0);
     }
-    100%{
+    100% {
         transform: rotate(360deg);
     }
 }
-a:hover .liquid::before,a:hover .liquid::after{
+
+.LiquidButton1:hover .liquid::before,
+.LiquidButton1:hover .liquid::after {
     top: -350px;
 }

@@ -1,7 +1,7 @@
-const navIcon1 = document.getElementById("nav-icon1");
-const navIcon2 = document.getElementById("nav-icon2");
-const navIcon3 = document.getElementById("nav-icon3");
-const navIcon4 = document.getElementById("nav-icon4");
+const navIcon1 = document.getElementsByClassName("animatedBurgerIcon1")[0];
+const navIcon2 = document.getElementsByClassName("animatedBurgerIcon2")[0];
+const navIcon3 = document.getElementsByClassName("animatedBurgerIcon3")[0];
+const navIcon4 = document.getElementsByClassName("animatedBurgerIcon4")[0];
 
 
 navIcon1.addEventListener('click', function() {

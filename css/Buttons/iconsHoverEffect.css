@@ -1,54 +1,55 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    background: black;
-}
-.main{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.icons{
+.iconHoverEffect {
     width: 50px;
     height: 50px;
     margin: 0 10px;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     position: relative;
-    border-radius: 50%;
+
     overflow: hidden;
+
+    border-radius: 50%;
 }
-.icons a{
+
+.iconHoverEffect a {
+    z-index: 10;
     color: white;
 }
-.icons::before{
+
+.iconHoverEffect::before {
     content: "";
+    z-index: 5;
+
+    width: 100%;
+    height: 100%;
+
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to left,#b52b65,#ed6663);
-    z-index: -1;
+    
+    background: linear-gradient(to left, #b52b65, #ed6663);
     border-radius: 50%;
-    transform: translate(100%,100%);
+
+    transform: translate(100%, 100%);
+
     transition: all .4s;
 }
-.icons:hover::before{
+
+.iconHoverEffect:hover::before {
     transform: translate(0);
-    animation: anim .4s linear;
+    animation: iconHoverEffectAnimation .4s linear;
 }
-@keyframes anim{
-    0%,100%{
+
+@keyframes iconHoverEffectAnimation {
+    0%, 100% {
         width: 100%;
         height: 100%;
     }
-    50%{
+
+    50% {
         width: 50%;
         height: 50%;
     }
