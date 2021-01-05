@@ -1,0 +1,98 @@
+.con-accordion {
+    --primary: 25, 91, 255;
+    --color: 44, 62, 80;
+    --bg: 255, 255, 255;
+    --red: 255, 0, 78;
+
+    width: 100%;
+    max-width: 630px;
+    padding: 25px;
+
+    border-radius: 30px;
+    background: #fff;
+}
+
+.accordion-item.open header h3 {
+    padding-left: 4px;
+    opacity: 1 !important;
+}
+
+.accordion-item.open header .con-icon {
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .16);
+    transform: scale(1.1);
+}
+
+.accordion-item.open .con-icon i {
+    transform: rotate(135deg);
+}
+
+.accordion-item h3 {
+    pointer-events: none;
+    user-select: none;
+    opacity: .6;
+    font-weight: normal;
+    transition: all .25s ease;
+}
+
+.accordion-item header {
+    padding: 12px 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    cursor: pointer;
+
+    transition: all .25s ease;
+}
+
+.accordion-item header:hover h3 {
+    opacity: 1;
+}
+
+.accordion-item:not(.open) header:hover h3 {
+    padding-left: 4px;
+}
+
+.accordion-content {
+    height: 0px;
+    overflow: hidden;
+    transition: all .25s ease;
+}
+
+.accordion-content p {
+    padding: 15px 20px;
+    padding-top: 10px;
+
+    user-select: none;
+    opacity: .8;
+
+    border-bottom: 1px dashed rgba(0, 0, 0, .08);
+    border-top: 1px dashed rgba(0, 0, 0, .08);
+
+    font-size: .9rem;
+}
+
+.con-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    pointer-events: none;
+    
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+
+    font-size: 1.3rem;
+
+    transition: all .25s ease;
+}
+
+.con-icon i {
+    transition: all .25s ease;
+}

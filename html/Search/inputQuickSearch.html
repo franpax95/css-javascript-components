@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Input Quick Search</title>
+
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+
+        <link rel="stylesheet" href="../../css/global.css">
+        <link rel="stylesheet" href="../../css/Search/inputQuickSearch.css">
+    </head>
+    <body style="background-color: #F4F7F8;">
+        <div class="con-search notValue">
+            <div class="con-input">
+                <input 
+                    onblur="handleBlur()" 
+                    onfocus="handleFocus(event)" 
+                    placeholder="Search User" 
+                    oninput="handleSearch(event)" 
+                    type="text">
+                <i class='bx bx-search'></i>
+                <i onclick="handleRemove()" class='bx bx-x' ></i>
+            </div>
+            <div class="content-results">
+                <div class="con-results"></div>
+                <div class="not-results">Not Results</div>
+            </div>
+        </div>
+
+        <script src="../../js/Search/inputQuickSearch.js"></script>
+    </body>
+
+    <!-- https://codepen.io/luisdanielroviracontreras/pen/jOqgwbP -->
+</html>
