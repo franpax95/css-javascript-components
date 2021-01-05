@@ -1,0 +1,97 @@
+body {
+    display: grid;
+    place-items: center;
+}
+
+.radioCustomInput1 {
+    height: 100px;
+    width: 400px;
+    padding: 20px 15px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, .2);
+}
+
+.radioCustomInput1 .option {
+    height: 100%;
+    width: 100%;
+    margin: 0 10px;
+    padding: 0 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    cursor: pointer;
+
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    background: #fff;
+
+    transition: all .3s ease;
+}
+
+.radioCustomInput1 .option .dot {
+    height: 20px;
+    width: 20px;
+
+    position: relative;
+
+    border-radius: 50%;
+    background: #d9d9d9;
+}
+
+.radioCustomInput1 .option .dot::before {
+    content: "";
+
+    width: 12px;
+    height: 12px;
+
+    position: absolute;
+    top: 4px;
+    left: 4px;
+
+    opacity: 0;
+
+    border-radius: 50%;
+    background: #0069d9;
+
+    transform: scale(1.5);
+    transition: all .3s ease;
+}
+
+.radioCustomInput1 input[type="radio"] {
+    display: none;
+}
+
+.radioCustomInput1 #option-1:checked:checked ~ .option-1,
+.radioCustomInput1 #option-2:checked:checked ~ .option-2 {
+    border-color: #0069d9;
+    background: #0069d9;
+}
+
+.radioCustomInput1 #option-1:checked:checked ~ .option-1 .dot,
+.radioCustomInput1 #option-2:checked:checked ~ .option-2 .dot {
+    background: #fff;
+}
+
+.radioCustomInput1 #option-1:checked:checked ~ .option-1 .dot::before,
+.radioCustomInput1 #option-2:checked:checked ~ .option-2 .dot::before{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.radioCustomInput1 .option span{
+    font-size: 20px;
+    color: #808080;
+}
+
+.radioCustomInput1 #option-1:checked:checked ~ .option-1 span,
+.radioCustomInput1 #option-2:checked:checked ~ .option-2 span{
+    color: #fff;
+}
