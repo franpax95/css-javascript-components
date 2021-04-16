@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 350px;
+    height: 350px;
+    margin: 20px;
+
+    position: relative;
+
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+}
+
+.content {
+    width: 300px;
+    height: 300px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    clip-path: circle(0% at 50% 50%);
+    background-color: rgba(255, 255, 255, .5);
+    color: white;
+
+    transform: translate(-50%, -50%);
+    transition: all .5s;
+}
+
+.box:hover .content {
+    clip-path: circle(100% at 50% 50%);
+}
+
+.box:hover img {
+    filter: blur(10px);
+    transform: scale(1.1);
+}
+
+.content p {
+    margin: 10px;
+    text-align: center;
+}

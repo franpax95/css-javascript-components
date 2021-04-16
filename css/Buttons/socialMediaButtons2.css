@@ -1,51 +1,49 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    background: black;
-}
-.main{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.toggle{
-    width: 50px;
-    height: 50px;
-    background: #c70039;
-    border-radius: 50%;
-    border: 2px solid #c70039;
-    cursor: pointer;
+.socialMediaButtons2 .toggle {
+    width: 52px;
+    height: 52px;
+
     position: relative;
+
+    cursor: pointer;
+
+    border: 2px solid #c70039;
+    border-radius: 50%;
+    background: #c70039;
 }
-.toggle::before{
+
+.socialMediaButtons2 .toggle::before {
     content: '\f1e0';
+
     width: 100%;
     height: 100%;
+
     position: absolute;
+
     color: white;
+
     font-family: fontAwesome;
+    font-size: 22px;
     text-align: center;
     line-height: 50px;
-    font-size: 22px;
 }
-.share.active .toggle::before{
+
+.socialMediaButtons2.active .toggle::before {
     content: '\f00d';
     font-size: 2rem;
 }
-.share{
+
+.socialMediaButtons2 {
     position: relative;
 }
-.share ol{
-    position: absolute;
-    margin: 2px;
+
+.socialMediaButtons2 ol {
+    margin: 1px;
     width: 50px;
     height: 50px;
+    position: absolute;
 }
-.share ol li{
+
+.socialMediaButtons2 ol li {
     position: absolute;
     width: 50px;
     height: 50px;
@@ -56,26 +54,32 @@ body{
     border-radius: 50%;
     transition: all .4s;
 }
-.share ol li a{
+
+.socialMediaButtons2 ol li a {
     color: black;
 }
-.share.active ol li{
+
+.socialMediaButtons2.active ol li {
     transform: translate(0);
     transition: all 0.4s;
 }
-.share.active ol li:nth-child(1){
+
+.socialMediaButtons2.active ol li:nth-child(1) {
     transition-delay: 0.1s;
     transform: translateX(60px);
 }
-.share.active ol li:nth-child(2){
+
+.socialMediaButtons2.active ol li:nth-child(2) {
     transition-delay: 0.2s;
     transform: translateY(60px);
 }
-.share.active ol li:nth-child(3){
+
+.socialMediaButtons2.active ol li:nth-child(3) {
     transition-delay: 0.3s;
     transform: translateX(-60px);
 }
-.share.active ol li:nth-child(4){
+
+.socialMediaButtons2.active ol li:nth-child(4) {
     transition-delay: 0.4s;
     transform: translateY(-60px);
 }

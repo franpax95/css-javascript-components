@@ -1,0 +1,336 @@
+.deleteButton {
+    --background: #2B3044;
+    --background-hover: #1E2235;
+    --text: #fff;
+    --shadow: rgba(0, 9, 61, .2);
+    --paper: #5C86FF;
+    --paper-lines: #fff;
+    --trash: #E1E6F9;
+    --trash-lines: #BBC1E1;
+    --check: #fff;
+    --check-background: #5C86FF;
+
+    display: flex;
+
+    position: relative;
+
+    min-width: 142px;
+    padding: 10px 24px;
+
+    cursor: pointer;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    background: none;
+    background: var(--btn, var(--background));
+    color: var(--text);
+    box-shadow: 0 var(--shadow-y, 4px) var(--shadow-blur, 8px) var(--shadow);
+
+    transform: scale(var(--scale, 1));
+    transition: transform .3s, box-shadow .3s, background .3s;
+}
+
+.deleteButton span {
+    display: block;
+
+    opacity: var(--span-opacity, 1);
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 25px;
+    
+    transform: translateX(var(--span-x, 0)) translateZ(0);
+    transition: transform .4s ease var(--span-delay, .2s), opacity .3s ease var(--span-delay, .2s);
+}
+
+.deleteButton .trash {
+    display: block;
+
+    position: relative;
+    left: -8px;
+
+    transform: translate(var(--trash-x, 0), var(--trash-y, 1px)) translateZ(0) scale(var(--trash-scale, .64));
+    transition: transform .5s;
+}
+
+.deleteButton .trash::before,
+.deleteButton .trash::after {
+    content: '';
+
+    height: 8px;
+    width: 2px;
+
+    position: absolute;
+    bottom: 100%;
+
+    border-radius: 1px;
+    background: var(--icon, var(--trash));
+    
+    transform-origin: 50% 6px;
+    transform: translate(var(--x, 3px), 2px) scaleY(var(--sy, .7)) rotate(var(--r, 0deg));
+    transition: transform .4s, background .3s;
+}
+
+.deleteButton .trash::before {
+    left: 1px;
+}
+
+.deleteButton .trash::after {
+    right: 1px;
+    --x: -3px;
+}
+
+.deleteButton .trash .top {
+    z-index: 1;
+
+    height: 40px;
+
+    position: absolute;
+    left: -4px;
+    right: -4px;
+    bottom: 100%;
+
+    overflow: hidden;
+    
+    transform: translateY(2px);
+}
+
+.deleteButton .trash .top::before,
+.deleteButton .trash .top::after {
+    content: '';
+
+    width: var(--w, 12px);
+    height: var(--h, 2px);
+
+    position: absolute;
+    left: var(--l, 8px);
+    bottom: var(--b, 5px);
+
+    border-radius: 1px;
+    background: var(--icon, var(--trash));
+    
+    transition: background .3s, transform .4s;
+}
+
+.deleteButton .trash .top:after {
+    --w: 28px;
+    --h: 2px;
+    --l: 0;
+    --b: 0;
+
+    transform: scaleX(var(--trash-line-scale, 1));
+}
+
+.deleteButton .trash .top .paper {
+    width: 14px;
+    height: 18px;
+
+    position: absolute;
+    left: 7px;
+    bottom: 0;
+
+    opacity: 0;
+
+    border-radius: 1px;
+    background: var(--paper);
+
+    transform: translateY(-16px);
+}
+
+.deleteButton .trash .top .paper::before,
+.deleteButton .trash .top .paper::after {
+    content: '';
+
+    width: var(--w, 10px);
+    height: 2px;
+
+    position: absolute;
+    left: 2px;
+    top: var(--t, 2px);
+
+    border-radius: 1px;
+    background: var(--paper-lines);
+    box-shadow: 0 9px 0 var(--paper-lines);
+
+    transform: scaleY(.7);
+}
+
+.deleteButton .trash .top .paper::after {
+    --t: 5px;
+    --w: 7px;
+}
+
+.deleteButton .trash .box {
+    z-index: 2;
+
+    width: 20px;
+    height: 25px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border: 2px solid var(--icon, var(--trash));
+    border-radius: 1px 1px 4px 4px;
+    
+    transition: border-color .3s;
+}
+
+.deleteButton .trash .box::before,
+.deleteButton .trash .box::after {
+    content: '';
+
+    width: 4px;
+    height: var(--h, 20px);
+
+    position: absolute;
+    top: 0;
+    left: var(--l, 50%);
+
+    background: var(--b, var(--trash-lines));
+}
+
+.deleteButton .trash .box::before {
+    margin-left: -2px;
+
+    opacity: var(--trash-lines-opacity, 1);
+
+    border-radius: 2px; 
+    box-shadow: 10px 0 0 var(--trash-lines);
+
+    transform: translateX(-3px) scale(.6);
+    transition: transform .4s, opacity .4s;
+}
+
+.deleteButton .trash .box::after {
+    --h: 16px;
+    --b: var(--paper);
+    --l: 1px;
+
+    box-shadow: 7px 0 0 var(--paper), 14px 0 0 var(--paper), 21px 0 0 var(--paper);
+
+    transform: translate(-.5px, -16px) scaleX(.5);
+}
+
+.deleteButton .trash .check {
+    padding: 4px 3px;
+
+    position: absolute;
+    left: 2px;
+    top: 24px;
+
+    opacity: var(--check-opacity, 0);
+
+    border-radius: 50%;
+    background: var(--check-background);
+    
+    transform: translateY(var(--check-y, 0)) scale(var(--check-scale, .2));
+    transition: transform var(--check-duration, .2s) ease var(--check-delay, 0s), 
+                opacity var(--check-duration-opacity, .2s) ease var(--check-delay, 0s);
+}
+
+.deleteButton .trash .check svg {
+    width: 8px;
+    height: 6px;
+
+    display: block;
+
+    fill: none;
+    stroke-width: 1.5;
+    stroke-dasharray: 9px;
+    stroke-dashoffset: var(--check-offset, 9px);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: var(--check);
+
+    transition: stroke-dashoffset .4s ease var(--checkmark-delay, .4s);
+}
+
+.deleteButton.delete {
+    --span-opacity: 0;
+    --span-x: 16px;
+    --span-delay: 0s;
+    --trash-x: 46px;
+    --trash-y: 2px;
+    --trash-scale: 1;
+    --trash-lines-opacity: 0;
+    --trash-line-scale: 0;
+    --icon: #fff;
+    --check-offset: 0;
+    --check-opacity: 1;
+    --check-scale: 1;
+    --check-y: 16px;
+    --check-delay: 1.7s;
+    --checkmark-delay: 2.1s;
+    --check-duration: .55s;
+    --check-duration-opacity: .3s;
+}
+
+.deleteButton.delete .trash::before,
+.deleteButton.delete .trash::after {
+    --sy: 1;
+    --x: 0;
+}
+
+.deleteButton.delete .trash::before {
+    --r: 40deg;
+}
+
+.deleteButton.delete .trash::after {
+    --r: -40deg;
+}
+
+.deleteButton.delete .trash .top .paper {
+    animation: paper 1.5s linear forwards .5s;
+}
+
+.deleteButton.delete .trash .box::after {
+    animation: cut 1.5s linear forwards .5s;
+}
+
+.deleteButton.delete,
+.deleteButton:hover {
+    --btn: var(--background-hover);
+    --shadow-y: 5px;
+    --shadow-blur: 9px;
+}
+
+.deleteButton:active {
+    --shadow-y: 2px;
+    --shadow-blur: 5px;
+    --scale: .94;
+}
+
+@keyframes paper {
+    10%,
+    100% {
+        opacity: 1;
+    }
+
+    20% {
+        transform: translateY(-16px);
+    }
+
+    40% {
+        transform: translateY(0);
+    }
+
+    70%,
+    100% {
+        transform: translateY(24px);
+    }
+}
+
+@keyframes cut {
+    0%,
+    40% {
+        transform: translate(-.5px, -16px) scaleX(.5);
+    }
+    
+    100% {
+        transform: translate(-.5px, 24px) scaleX(.5);
+    }
+}
