@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/Inputs/toggleSwitch3.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="inputBox">
+            <input type="checkbox" name="" id="emojiInput">
+            <label for="emojiInput" id="emoji">😣</label>
+        </div>
+    </div>
+
+    <script>
+        const emojiInput = document.getElementById("emojiInput");
+        const emoji = document.getElementById("emoji");
+        emojiInput.addEventListener('click', () => {
+            console.log(emojiInput.checked);
+            if (emojiInput.checked == true) {
+                emoji.innerHTML = '😊';
+            } else {
+                emoji.innerHTML = '😣';
+            }
+        });
+    </script>
+
+</body>
+
+</html>
