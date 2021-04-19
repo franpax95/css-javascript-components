@@ -1,4 +1,4 @@
-var button = document.querySelectorAll('.nexus');
+var button = document.querySelectorAll('.rippleButton1');
 for (var i = 0; i < button.length; i++) {
     button[i].onmousedown = function (e) {
 

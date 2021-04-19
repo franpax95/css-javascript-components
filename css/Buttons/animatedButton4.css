@@ -1,42 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Oswald:400);
-
-/* variables */
-html,
-body,
-.wrapper {
-    height: 100%;
-}
-
-body {
-    background: url(https://dl.dropboxusercontent.com/s/d4v7klfcq68uv5x/13.jpg) 50% 50% no-repeat;
-    background-size: cover;
-    font-family: 'Oswald', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-}
-
-.wrapper {
-    background: rgba(0, 0, 0, 0.7);
-}
-
-.wrapper:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url(https://dl.dropboxusercontent.com/u/5233512/f2DRJ.png);
-}
-
-.inner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -21px 0 0 -116px;
-}
-
-.button {
+.animatedButton4 {
     position: absolute;
     display: block;
     width: 230px;
@@ -50,7 +12,7 @@ body {
     z-index: 1;
 }
 
-.button span {
+.animatedButton4 span {
     position: absolute;
     transition-property: all;
     transition-duration: .2s;
@@ -58,7 +20,7 @@ body {
     z-index: 1;
 }
 
-.button .border {
+.animatedButton4 .border {
     border: 1px solid #ebff33;
     top: 0;
     bottom: 0;
@@ -67,79 +29,79 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-.button .top,
-.button .bottom,
-.button .left,
-.button .right {
+.animatedButton4 .top,
+.animatedButton4 .bottom,
+.animatedButton4 .left,
+.animatedButton4 .right {
     background-color: #ebff33;
     height: 1px;
     width: 0;
 }
 
-.button .left,
-.button .right {
+.animatedButton4 .left,
+.animatedButton4 .right {
     height: 0;
     width: 1px;
 }
 
-.button .top {
+.animatedButton4 .top {
     top: -5px;
     left: -15px;
 }
 
-.button .bottom {
+.animatedButton4 .bottom {
     bottom: -5px;
     right: -15px;
 }
 
-.button .left {
+.animatedButton4 .left {
     top: -15px;
     right: -5px;
 }
 
-.button .right {
+.animatedButton4 .right {
     bottom: -15px;
     left: -5px;
 }
 
-.button:hover {
+.animatedButton4:hover {
     color: #fff;
 }
 
-.button:hover .border {
+.animatedButton4:hover .border {
     top: -5px;
     bottom: -5px;
     left: -5px;
     right: -5px;
 }
 
-.button:hover .top,
-.button:hover .bottom {
+.animatedButton4:hover .top,
+.animatedButton4:hover .bottom {
     width: 230px;
 }
 
-.button:hover .left,
-.button:hover .right {
+.animatedButton4:hover .left,
+.animatedButton4:hover .right {
     height: 40px;
 }
 
-.button:hover .top {
+.animatedButton4:hover .top {
     left: -5px;
 }
 
-.button:hover .bottom {
+.animatedButton4:hover .bottom {
     right: -5px;
 }
 
-.button:hover .left {
+.animatedButton4:hover .left {
     top: -5px;
 }
 
-.button:hover .right {
+.animatedButton4:hover .right {
     bottom: -5px;
 }
 
-.button .text {
+.animatedButton4 .text {
     position: relative;
     letter-spacing: .03em;
 }

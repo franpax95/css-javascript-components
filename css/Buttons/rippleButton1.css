@@ -1,4 +1,4 @@
-@keyframes clickeffect {
+@keyframes rippleButton1_clickeffect {
     from {
         opacity: 0.7;
         transform: scale(0);
@@ -10,7 +10,7 @@
     }
 }
 
-@-webkit-keyframes clickeffect {
+@-webkit-keyframes rippleButton1_clickeffect {
     from {
         opacity: 0.7;
         transform: scale(0);
@@ -22,7 +22,7 @@
     }
 }
 
-.nexus {
+.rippleButton1 {
     width: 200px;
     height: 50px;
     border: 0px;
@@ -41,16 +41,16 @@
     text-decoration: none;
 }
 
-.nexus:focus {
+.rippleButton1:focus {
     outline: -webkit-focus-ring-color auto 0px;
 }
 
-a.nexus {
+a.rippleButton1 {
     height: 37px;
     padding: 7px 0px;
 }
 
-button.nexus {}
+button.rippleButton1 {}
 
 .effect {
     margin: -100px;
@@ -61,21 +61,21 @@ button.nexus {}
     background: rgba(255, 255, 255, 0.5);
     transform: scale(0);
     pointer-events: none;
-    animation: clickeffect 1s ease;
-    -webkit-animation: clickeffect 1s ease;
+    animation: rippleButton1_clickeffect 1s ease;
+    -webkit-animation: rippleButton1_clickeffect 1s ease;
 }
 
-.nexus.grey {
+.rippleButton1.grey {
     color: #FFFFFF;
     background: #838383;
 }
 
-.nexus.red {
+.rippleButton1.red {
     color: #FFF;
     background: #EA7878;
 }
 
-.nexus.green {
+.rippleButton1.green {
     color: #FFF;
     background: #77CA72;
 }

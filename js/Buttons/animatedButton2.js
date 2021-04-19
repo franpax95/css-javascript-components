@@ -1,4 +1,4 @@
-const buttons = document.querySelectorAll(".js-toggle-state");
+const buttons = document.querySelectorAll(".animatedButton2");
 
 for (const button of buttons) {
     button.addEventListener('click', function (event) {

@@ -1,17 +1,4 @@
-body {
-    position: relative;
-    font-family: sans-serif;
-    font-size: 14px;
-}
-
-.wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.btn {
+.animatedButton6 {
     position: relative;
     display: inline-block;
     letter-spacing: 1.2px;
@@ -23,31 +10,31 @@ body {
     cursor: pointer;
 }
 
-.btn:focus {
+.animatedButton6:focus {
     outline: none;
 }
 
-.btn--primary {
+.animatedButton6--primary {
     color: lightslategray;
 }
 
-.btn--border {
+.animatedButton6--border {
     border-width: 1px;
     border-style: solid;
     border-radius: 10px;
     box-sizing: border-box;
 }
 
-.btn--animated {
+.animatedButton6--animated {
     transition-property: color;
     transition-duration: 0.5s;
 }
 
-.btn--animated.btn--border.btn--primary {
+.animatedButton6--animated.animatedButton6--border.animatedButton6--primary {
     border: 1px solid lightslategray;
 }
 
-.btn--animated:before {
+.animatedButton6--animated:before {
     content: "";
     position: absolute;
     top: 0;
@@ -63,11 +50,11 @@ body {
     z-index: -1;
 }
 
-.btn--animated:hover {
+.animatedButton6--animated:hover {
     color: white;
 }
 
-.btn--animated:hover:before {
+.animatedButton6--animated:hover:before {
     transform: scaleX(1);
     transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
 }

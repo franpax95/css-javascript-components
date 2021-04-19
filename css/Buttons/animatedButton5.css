@@ -1,34 +1,12 @@
-body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
-    background: #353535;
-    color: #FFF;
-}
-
-.jumbotron h1 {
-    color: #353535;
-}
-
-span.icon {
-    margin: 0 5px;
-    color: #D64541;
-}
-
-h2 {
-    color: #BDC3C7
-}
-
-.mrng-60-top {
-    margin-top: 60px;
-}
-
 /* Global Button Styles */
-a.animated-button:link,
-a.animated-button:visited {
+a.animatedButton5:link,
+a.animatedButton5:visited {
+    height: 50px;
+    width: 150px;
     position: relative;
-    display: block;
-    margin: 30px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 14px 15px;
     color: #fff;
     font-size: 14px;
@@ -46,8 +24,8 @@ a.animated-button:visited {
     transition: all 1s ease;
 }
 
-a.animated-button:link:after,
-a.animated-button:visited:after {
+a.animatedButton5:link:after,
+a.animatedButton5:visited:after {
     content: "";
     position: absolute;
     height: 0%;
@@ -61,22 +39,23 @@ a.animated-button:visited:after {
     transition: all 0.75s ease 0s;
 }
 
-a.animated-button:link:hover,
-a.animated-button:visited:hover {
+a.animatedButton5:link:hover,
+a.animatedButton5:visited:hover {
     color: #FFF;
     text-shadow: none;
 }
 
-a.animated-button:link:hover:after,
-a.animated-button:visited:hover:after {
+a.animatedButton5:link:hover:after,
+a.animatedButton5:visited:hover:after {
     height: 450%;
 }
 
-a.animated-button:link,
-a.animated-button:visited {
+a.animatedButton5:link,
+a.animatedButton5:visited {
     position: relative;
-    display: block;
-    margin: 30px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 14px 15px;
     color: #fff;
     font-size: 14px;
@@ -96,11 +75,11 @@ a.animated-button:visited {
 
 /* Victoria Buttons */
 
-a.animated-button.victoria-one {
+a.animatedButton5.victoria-one {
     border: 2px solid #D24D57;
 }
 
-a.animated-button.victoria-one:after {
+a.animatedButton5.victoria-one:after {
     background: #D24D57;
     -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
     -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
@@ -108,11 +87,11 @@ a.animated-button.victoria-one:after {
     transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 }
 
-a.animated-button.victoria-two {
+a.animatedButton5.victoria-two {
     border: 2px solid #D24D57;
 }
 
-a.animated-button.victoria-two:after {
+a.animatedButton5.victoria-two:after {
     background: #D24D57;
     -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
     -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
@@ -120,11 +99,11 @@ a.animated-button.victoria-two:after {
     transform: translateX(-50%) translateY(-50%) rotate(25deg);
 }
 
-a.animated-button.victoria-three {
+a.animatedButton5.victoria-three {
     border: 2px solid #D24D57;
 }
 
-a.animated-button.victoria-three:after {
+a.animatedButton5.victoria-three:after {
     background: #D24D57;
     opacity: .5;
     -moz-transform: translateX(-50%) translateY(-50%);
@@ -133,16 +112,16 @@ a.animated-button.victoria-three:after {
     transform: translateX(-50%) translateY(-50%);
 }
 
-a.animated-button.victoria-three:hover:after {
+a.animatedButton5.victoria-three:hover:after {
     height: 140%;
     opacity: 1;
 }
 
-a.animated-button.victoria-four {
+a.animatedButton5.victoria-four {
     border: 2px solid #D24D57;
 }
 
-a.animated-button.victoria-four:after {
+a.animatedButton5.victoria-four:after {
     background: #D24D57;
     opacity: .5;
     -moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
@@ -151,19 +130,19 @@ a.animated-button.victoria-four:after {
     transform: translateY(-50%) translateX(-50%) rotate(90deg);
 }
 
-a.animated-button.victoria-four:hover:after {
+a.animatedButton5.victoria-four:hover:after {
     opacity: 1;
     height: 600% !important;
 }
 
 /* Sandy Buttons */
 
-a.animated-button.sandy-one {
+a.animatedButton5.sandy-one {
     border: 2px solid #AEA8D3;
     color: #FFF;
 }
 
-a.animated-button.sandy-one:after {
+a.animatedButton5.sandy-one:after {
     border: 3px solid #AEA8D3;
     opacity: 0;
     -moz-transform: translateX(-50%) translateY(-50%);
@@ -173,18 +152,18 @@ a.animated-button.sandy-one:after {
 
 }
 
-a.animated-button.sandy-one:hover:after {
+a.animatedButton5.sandy-one:hover:after {
     height: 120% !important;
     opacity: 1;
     color: #FFF;
 }
 
-a.animated-button.sandy-two {
+a.animatedButton5.sandy-two {
     border: 2px solid #AEA8D3;
     color: #FFF;
 }
 
-a.animated-button.sandy-two:after {
+a.animatedButton5.sandy-two:after {
     border: 3px solid #AEA8D3;
     opacity: 0;
     -moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
@@ -193,18 +172,18 @@ a.animated-button.sandy-two:after {
     transform: translateY(-50%) translateX(-50%) rotate(90deg);
 }
 
-a.animated-button.sandy-two:hover:after {
+a.animatedButton5.sandy-two:hover:after {
     height: 600% !important;
     opacity: 1;
     color: #FFF;
 }
 
-a.animated-button.sandy-three {
+a.animatedButton5.sandy-three {
     border: 2px solid #AEA8D3;
     color: #FFF;
 }
 
-a.animated-button.sandy-three:after {
+a.animatedButton5.sandy-three:after {
     border: 3px solid #AEA8D3;
     opacity: 0;
     -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
@@ -213,18 +192,18 @@ a.animated-button.sandy-three:after {
     transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 }
 
-a.animated-button.sandy-three:hover:after {
+a.animatedButton5.sandy-three:hover:after {
     height: 400% !important;
     opacity: 1;
     color: #FFF;
 }
 
-a.animated-button.sandy-four {
+a.animatedButton5.sandy-four {
     border: 2px solid #AEA8D3;
     color: #FFF;
 }
 
-a.animated-button.sandy-four:after {
+a.animatedButton5.sandy-four:after {
     border: 3px solid #AEA8D3;
     opacity: 0;
     -moz-transform: translateY(-50%) translateX(-50%) rotate(25deg);
@@ -233,7 +212,7 @@ a.animated-button.sandy-four:after {
     transform: translateY(-50%) translateX(-50%) rotate(25deg);
 }
 
-a.animated-button.sandy-four:hover:after {
+a.animatedButton5.sandy-four:hover:after {
     height: 400% !important;
     opacity: 1;
     color: #FFF;
@@ -241,12 +220,12 @@ a.animated-button.sandy-four:hover:after {
 
 /* Gibson Buttons */
 
-a.animated-button.gibson-one {
+a.animatedButton5.gibson-one {
     border: 2px solid #65b37a;
     color: #FFF;
 }
 
-a.animated-button.gibson-one:after {
+a.animatedButton5.gibson-one:after {
     opacity: 0;
     background-image: -webkit-linear-gradient(transparent 50%, rgba(101, 179, 122, 0.2) 50%);
     background-image: -moz-linear-gradient(transparent 50%, rgba(101, 179, 122, 0.2) 50%);
@@ -257,18 +236,18 @@ a.animated-button.gibson-one:after {
     transform: translateX(-50%) translateY(-50%) rotate(25deg);
 }
 
-a.animated-button.gibson-one:hover:after {
+a.animatedButton5.gibson-one:hover:after {
     height: 600% !important;
     opacity: 1;
     color: #FFF;
 }
 
-a.animated-button.gibson-two {
+a.animatedButton5.gibson-two {
     border: 2px solid #65b37a;
     color: #FFF;
 }
 
-a.animated-button.gibson-two:after {
+a.animatedButton5.gibson-two:after {
     opacity: 0;
     background-image: -webkit-linear-gradient(transparent 50%, rgba(101, 179, 122, 0.2) 50%);
     background-image: -moz-linear-gradient(transparent 50%, rgba(101, 179, 122, 0.2) 50%);
@@ -279,18 +258,18 @@ a.animated-button.gibson-two:after {
     transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 }
 
-a.animated-button.gibson-two:hover:after {
+a.animatedButton5.gibson-two:hover:after {
     height: 600% !important;
     opacity: 1;
     color: #FFF;
 }
 
-a.animated-button.gibson-three {
+a.animatedButton5.gibson-three {
     border: 2px solid #65b37a;
     color: #FFF;
 }
 
-a.animated-button.gibson-three:after {
+a.animatedButton5.gibson-three:after {
     opacity: 0;
     background-image: -webkit-linear-gradient(transparent 50%, rgba(101, 179, 122, 0.2) 50%);
     background-image: -moz-linear-gradient(transparent 50%, rgba(101, 179, 122, 0.2) 50%);
@@ -301,18 +280,18 @@ a.animated-button.gibson-three:after {
     transform: translateX(-50%) translateY(-50%) rotate(90deg);
 }
 
-a.animated-button.gibson-three:hover:after {
+a.animatedButton5.gibson-three:hover:after {
     height: 600% !important;
     opacity: 1;
     color: #FFF;
 }
 
-a.animated-button.gibson-four {
+a.animatedButton5.gibson-four {
     border: 2px solid #65b37a;
     color: #FFF;
 }
 
-a.animated-button.gibson-four:after {
+a.animatedButton5.gibson-four:after {
     opacity: 0;
     background-image: -webkit-linear-gradient(transparent 50%, rgba(101, 179, 122, 0.2) 50%);
     background-image: -moz-linear-gradient(transparent 50%, rgba(101, 179, 122, 0.2) 50%);
@@ -323,7 +302,7 @@ a.animated-button.gibson-four:after {
     transform: translateX(-50%) translateY(-50%);
 }
 
-a.animated-button.gibson-four:hover:after {
+a.animatedButton5.gibson-four:hover:after {
     height: 600% !important;
     opacity: 1;
     color: #FFF;
@@ -331,7 +310,7 @@ a.animated-button.gibson-four:hover:after {
 
 /* Thar Buttons */
 
-a.animated-button.thar-one {
+a.animatedButton5.thar-one {
     color: #fff;
     cursor: pointer;
     display: block;
@@ -340,19 +319,19 @@ a.animated-button.thar-one {
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
-a.animated-button.thar-one:hover {
+a.animatedButton5.thar-one:hover {
     color: #000 !important;
     background-color: transparent;
     text-shadow: none;
 }
 
-a.animated-button.thar-one:hover:before {
+a.animatedButton5.thar-one:hover:before {
     bottom: 0%;
     top: auto;
     height: 100%;
 }
 
-a.animated-button.thar-one:before {
+a.animatedButton5.thar-one:before {
     display: block;
     position: absolute;
     left: 0px;
@@ -366,7 +345,7 @@ a.animated-button.thar-one:before {
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
-a.animated-button.thar-two {
+a.animatedButton5.thar-two {
     color: #fff;
     cursor: pointer;
     display: block;
@@ -375,19 +354,19 @@ a.animated-button.thar-two {
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
-a.animated-button.thar-two:hover {
+a.animatedButton5.thar-two:hover {
     color: #000 !important;
     background-color: transparent;
     text-shadow: ntwo;
 }
 
-a.animated-button.thar-two:hover:before {
+a.animatedButton5.thar-two:hover:before {
     top: 0%;
     bottom: auto;
     height: 100%;
 }
 
-a.animated-button.thar-two:before {
+a.animatedButton5.thar-two:before {
     display: block;
     position: absolute;
     left: 0px;
@@ -401,7 +380,7 @@ a.animated-button.thar-two:before {
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
-a.animated-button.thar-three {
+a.animatedButton5.thar-three {
     color: #fff;
     cursor: pointer;
     display: block;
@@ -410,19 +389,19 @@ a.animated-button.thar-three {
     transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
 }
 
-a.animated-button.thar-three:hover {
+a.animatedButton5.thar-three:hover {
     color: #000 !important;
     background-color: transparent;
     text-shadow: nthree;
 }
 
-a.animated-button.thar-three:hover:before {
+a.animatedButton5.thar-three:hover:before {
     left: 0%;
     right: auto;
     width: 100%;
 }
 
-a.animated-button.thar-three:before {
+a.animatedButton5.thar-three:before {
     display: block;
     position: absolute;
     top: 0px;
@@ -436,7 +415,7 @@ a.animated-button.thar-three:before {
     transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
 }
 
-a.animated-button.thar-four {
+a.animatedButton5.thar-four {
     color: #fff;
     cursor: pointer;
     display: block;
@@ -445,19 +424,19 @@ a.animated-button.thar-four {
     transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
 }
 
-a.animated-button.thar-four:hover {
+a.animatedButton5.thar-four:hover {
     color: #000 !important;
     background-color: transparent;
     text-shadow: nfour;
 }
 
-a.animated-button.thar-four:hover:before {
+a.animatedButton5.thar-four:hover:before {
     right: 0%;
     left: auto;
     width: 100%;
 }
 
-a.animated-button.thar-four:before {
+a.animatedButton5.thar-four:before {
     display: block;
     position: absolute;
     top: 0px;

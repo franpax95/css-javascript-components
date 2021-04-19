@@ -1,17 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Droid+Serif");
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #ededed;
-    font-family: 'Droid Serif', serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.button {
+.animatedButton1 {
     position: relative;
     display: inline-flex;
     text-decoration: none;
@@ -24,7 +11,7 @@
     box-shadow: 0px 3px 4px -4px rgba(0, 0, 0, 0.75);
 }
 
-.button::before {
+.animatedButton1::before {
     content: '';
     position: absolute;
     left: 0;
@@ -38,7 +25,7 @@
     transition: transform 750ms;
 }
 
-.button span {
+.animatedButton1 span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,7 +35,7 @@
     background-color: #4A90E2;
 }
 
-.button svg {
+.animatedButton1 svg {
     max-width: 20px;
     width: 100%;
     height: auto;
@@ -56,15 +43,15 @@
     fill: white;
 }
 
-.button:hover::before {
+.animatedButton1:hover::before {
     transform: scaleX(1);
 }
 
-.button:hover svg {
-    animation: moveArrow 750ms;
+.animatedButton1:hover svg {
+    animation: animatedButton1_movearrow 750ms;
 }
 
-@keyframes moveArrow {
+@keyframes animatedButton1_movearrow {
     0% {
         transform: translateX(0px);
     }
